@@ -5,7 +5,9 @@
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start src/loader.js --name to-do-app"
+    "production": "pm2 start src/loader.js --name to-do-app",
+    "monit": "pm2 monit",
+    "stop-server": "pm2 stop to-do-app"
   },
   "repository": {
     "type": "git",
